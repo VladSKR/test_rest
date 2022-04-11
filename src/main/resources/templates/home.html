@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head><title>Home Page</title></head>
+<body>
+<h1>Colleagues:</h1>
+<tr th:each="colleague : ${colleagues}">
+    <td th:text="${colleague.firstName}">FirstName</td>
+    <td th:text="${colleague.fathersName}">fathersName</td>
+    <td th:text="${colleague.jobPosition}">jobPosition</td>
+</tr>
+
+
+</body>
+</html>
